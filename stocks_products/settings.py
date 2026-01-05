@@ -139,11 +139,11 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # CSRF
-CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS', '').split(',')
+
 
 
 # Для gunicorn
-WSGI_APPLICATION = 'ваш_проект.wsgi.application'
+WSGI_APPLICATION = 'stocks_products.wsgi.application'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
